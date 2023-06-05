@@ -59,3 +59,24 @@ list2=[1,2,3,4,5]
 print("Firstlist before clearing:",list2)
 list2 *=0
 print("Firstlist after clearing:",list2)
+
+######################################################################################
+
+#9- How to remove the nth occurrence of the word from a list?
+
+list1=["Vital","Reddy","Nani","Bittu"]
+
+n=2
+word="Nani"
+count=0
+for i in range(0,len(list1)):
+    if (list1[i])==word:
+        count=count+1
+        if count==n:
+            del list1[i]
+print("Updated list",list1)
+        
+        
+        
+    
+
