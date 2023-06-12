@@ -36,3 +36,21 @@ function uppercase(str){
     return newarray.join(" ")
 }
 console.log(uppercase("the quick brown fox"))
+
+// 16. Write a JavaScript function to extract unique characters from a string.
+// Example string : "thequickbrownfoxjumpsoverthelazydog"
+// Expected Output : "thequickbrownfxjmpsvlazydg"
+
+function unique_char(str1){
+    var str=str1;
+    var unique1 = "";
+    for (var i=0;i<str.length;i++){
+        if (unique1.indexOf(str.charAt(i))==-1);
+        {
+            unique1 += str[i];
+        }
+    }
+    return unique1;
+}
+
+console.log(unique_char("thequickbrownfoxjumpsoverthelazydog"));
