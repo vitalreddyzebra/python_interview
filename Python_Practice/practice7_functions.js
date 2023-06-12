@@ -54,3 +54,23 @@ function unique_char(str1){
 }
 
 console.log(unique_char("thequickbrownfoxjumpsoverthelazydog"));
+
+//Write a JavaScript function to get the number of occurrences of each letter in specified string
+
+
+function occurence_of_each_letter(str){
+    let newstr=str.split("").sort().join("")
+    let count=1
+    console.log(newstr)
+    for (var x=0;x<str.length;x++){
+        if (newstr[x]==newstr[x+1]){
+            count ++
+        }
+        else{
+            console.log(newstr[x] + " " + count)
+            count = 1
+        }
+
+    }
+}
+occurence_of_each_letter("aababasbbabsasaewelw")
