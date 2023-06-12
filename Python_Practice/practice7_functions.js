@@ -74,3 +74,5 @@ function occurence_of_each_letter(str){
     }
 }
 occurence_of_each_letter("aababasbbabsasaewelw")
+
+//-------------------------------------------------------------
